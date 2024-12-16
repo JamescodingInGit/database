@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Assignment.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" runat="server" media="screen" href="~/MasterPage.css" />
+    <script src="https://kit.fontawesome.com/298f4ece43.js" crossorigin="anonymous"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="nav">
+        <div class="navbar">
+            <div class="logo-image">
+                <asp:HyperLink ID="mainLink" runat="server" ImageUrl="~/Image/Logo.png" NavigateUrl="~/Home.aspx" CssClass="logo"></asp:HyperLink>
+            </div>
+            <asp:HyperLink ID="busLink" runat="server" CssClass="first-link" NavigateUrl="~/Bus.aspx">Bus</asp:HyperLink>
+            <asp:HyperLink ID="trainLink" runat="server" NavigateUrl="~/Train.aspx">Train</asp:HyperLink>
+            <asp:HyperLink ID="ferryFastboatLink" runat="server" NavigateUrl="~/Ferry.aspx">Ferry and Fastboat</asp:HyperLink>
+            <div class="dropdown1">
+                <asp:HyperLink ID="DropDownHeader" runat="server" CssClass="SignIn">Sign In <i class="fa-solid fa-caret-down"></i></asp:HyperLink>
+                <div class="dropdown-content1">
+                    <asp:HyperLink ID="loginLink" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+                    <asp:HyperLink ID="registerLink" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+                    <asp:HyperLink ID="adminLink" runat="server" NavigateUrl="~/Dashboard.aspx" Visible="false">Admin</asp:HyperLink>
+                    <asp:HyperLink ID="logoutLink" runat="server" Visible="false" NavigateUrl="~/Logout.aspx">Logout</asp:HyperLink>
+                </div>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <div class="footer">
+        <div class="row">
+            <div class="footer-row">
+                <h4>Product</h4>
+                <ul>
+                    <li><asp:HyperLink ID="busLink2" runat="server"><i class="fa-solid fa-bus"></i>&nbsp;Bus</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="trainLink2" runat="server"><i class="fa-solid fa-train"></i>&nbsp;Train</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="ferryFastboatLink2" runat="server"><i class="fa-solid fa-ferry"></i>&nbsp;Ferry and Fastboat</asp:HyperLink></li>
+                </ul>
+            </div>
+            <div class="footer-row">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="emailLink" runat="server"><i class="fa-solid fa-envelope"></i>&nbsp;AmagiTransport@gmail.com</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="phoneLink" runat="server"><i class="fa-solid fa-phone"></i>&nbsp;011-55005083</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="locationLink" runat="server"><i class="fa-solid fa-location-dot"></i>&nbsp;New York, Mars</asp:HyperLink></li>
+                </ul>
+            </div>
+            <div class="footer-row">
+                <h4>Account</h4>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="loginLink2" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="registerLink2" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink></li>
+                </ul>
+            </div>
+            <div class="footer-row-social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="facebookLink" runat="server"><i class="fa-brands fa-facebook"></i></asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="XLink" runat="server"><i class="fa-brands fa-twitter"></i></asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="instagramLink" runat="server"><i class="fa-brands fa-instagram"></i></asp:HyperLink></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

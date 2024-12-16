@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="Assignment.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <style type="text/css">
+        body {
+            background-image: linear-gradient(to bottom, #ffffff, #f3f3f3, #e7e7e7, #dbdbdb, #cfcfcf);
+            margin: 0;
+        }
+
+        .auto-style1 {
+        
+            width:auto;
+            height:auto;
+
+        }
+
+        .auto-style6 {
+            box-shadow: 5px 5px #888888;
+            width: 228px;
+            height: 67px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 15px;
+        }
+
+        .auto-style8 {
+            height: 112px;
+            width: 750px;
+        }
+
+        .auto-style10 {
+            float: left;
+            width: 155px;
+            height: 24px;
+            margin-top: 0px;
+        }
+
+        .auto-style11 {
+            float: left;
+            margin-top: 4px;
+            margin-left: 2px;
+            margin-right: 3px;
+            width: 59px;
+            height: 66px;
+        }
+
+        .auto-style12 {
+            margin-top: 10px;
+            float: left;
+            width: 160px;
+            height: 30px;
+        }
+
+        .auto-style20 {
+            height: 411px;
+            width: 297px;
+        }
+
+        .auto-style21 {
+            height: 411px;
+            width: 750px;
+        }
+
+        .auto-style22 {
+            height: 100%;
+            width: 1093px;
+            margin-left: 19px;
+        }
+
+
+        .custom-sitemap {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .current-node {
+            color: #333333;
+        }
+
+        .node {
+            font-weight: bold;
+            color: #666666;
+        }
+
+        .path-separator {
+            font-weight: bold;
+            color: #1C5E55;
+        }
+
+        .root-node {
+            font-weight: bold;
+            color: #1C5E55;
+        }
+
+        .custom-treeview {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Background color of the menu */
+            border-radius: 5px;
+            padding-top: 10px;
+            box-shadow: 5px 5px 5px black;
+            overflow: hidden;
+        }
+
+        .treeview_nodes {
+            width: 90%;
+            border-bottom: 2px solid;
+        }
+
+        /* Add your own styles here */
+        .admin-menu {
+            border-color: #000000;
+            padding: 10px;
+            background-image: linear-gradient(to right top, #ffffff, #ececed, #dbd9da, #c9c7c8, #b8b5b5);
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px #888888;
+            height:100%;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-left: 2px;
+            transition: transform 1s ease;
+        }
+
+            .menu-item a {
+                margin-left: 6px;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                font-size: 25px;
+                display: block;
+                padding: 5px;
+                width: 100%;
+                border-radius: 3px;
+            }
+
+            .menu-item:hover {
+                background-color: #ebeeeb;
+                transform: scale(1.1);
+            }
+
+        .auto-style23 {
+            width: 297px;
+            height: 112px;
+        }
+
+        .auto-style24 {
+            margin-top: 10px;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        .auto-style25 {
+            height: 412px;
+        }
+        
+        .no-margin{
+            margin-top:0;
+        }
+
+    </style>
+    <script>
+        window.addEventListener('load', function () {
+            var footer = document.getElementsByClassName("footer");
+            footer[0].classList.add("no-margin");
+
+        });
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <table class="auto-style1" style="border-color: #000000; border-collapse: collapse;" >
+            <tr>
+                <td class="auto-style20">
+                    <div class="admin-menu">
+                        <div class="auto-style24">
+                            <div class="menu-item">
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/image/dashboard1.png" Width="20px" />
+                                <asp:HyperLink ID="dashBoard" runat="server" NavigateUrl="~/dashboard.aspx">DashBoard</asp:HyperLink>
+                            </div>
+                            <br />
+
+                            <div class="menu-item">
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/image/promotion.png" Width="20px" />
+                                <asp:HyperLink ID="promotionLink" runat="server" NavigateUrl="~/promotion.aspx">Promotion</asp:HyperLink>
+                            </div>
+                            <br />
+                            <div class="menu-item">
+                                <asp:Image ID="Image3" runat="server" ImageUrl="~/image/user1.png" Width="20px" />
+                                <asp:HyperLink ID="userManagementnLink" runat="server" NavigateUrl="~/userManagement.aspx">User Management</asp:HyperLink>
+                            </div>
+                            <br />
+                            <div class="menu-item">
+                                <asp:Image ID="Image5" runat="server" ImageUrl="~/image/schedule1.png" Width="20px" />
+                                <asp:HyperLink ID="scheduleLink" runat="server" NavigateUrl="~/schedule.aspx">Schedule</asp:HyperLink>
+                            </div>
+                            <br />
+                            <div class="menu-item">
+                                <asp:Image ID="Image7" runat="server" ImageUrl="~/image/operator.png" Width="20px" />
+                                <asp:HyperLink ID="operatorLink" runat="server" NavigateUrl="~/operator.aspx">Operator</asp:HyperLink>
+                            </div>
+                            <br />
+                        </div>
+
+                    </div>
+                </td>
+                <td class="auto-style21" style="border-color: #000000; border-bottom-style: solid; border-bottom-width: 1px;">
+                    <div class="auto-style22">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="35px" PathSeparator=" : " CssClass="custom-sitemap" BorderColor="White" BorderWidth="4px">
+                            <CurrentNodeStyle ForeColor="#333333" CssClass="current-node" />
+                            <NodeStyle Font-Bold="True" ForeColor="#666666" CssClass="node" />
+                            <PathSeparatorStyle Font-Bold="True" ForeColor="#1C5E55" CssClass="path-separator" />
+                            <RootNodeStyle Font-Bold="True" ForeColor="#FF3300" CssClass="root-node" />
+                        </asp:SiteMapPath>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+            </table>
+</asp:Content>

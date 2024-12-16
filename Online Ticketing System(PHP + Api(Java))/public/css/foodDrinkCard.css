@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.foodDrink-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 330px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position:relative;
+    display: inline-block;
+    background-image: linear-gradient(to right, red , #880808);
+}
+
+.foodDrinkIMG {
+    border-radius: 5px 5px 0 0;
+    width: 330px; /* Make the image take up the full width of the card */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+.foodDrink-card h3{
+    border-radius: 5px 5px 0 0;
+    font-size: 17px;
+    color: white;
+    padding: 20px;
+}
+
+
+.foodDrink-card:hover{
+    .foodDrinkIMG{
+        filter: opacity(0.75); 
+    }
+    border: 2px solid #880808;
+}
+

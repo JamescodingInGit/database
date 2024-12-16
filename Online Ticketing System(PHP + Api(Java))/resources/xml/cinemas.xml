@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<cinemas>
+    <cinema>
+        <cinemaName></cinemaName>
+        <location></location>
+        <numHall></numHall>
+        <address></address>
+        <created_at></created_at>
+        <updated_at></updated_at>
+    </cinema>
+</cinemas>
+

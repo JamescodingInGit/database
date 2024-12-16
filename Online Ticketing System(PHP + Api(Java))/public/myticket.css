@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #606060;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+    color: #f0f0f0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    background-color: #FFD700;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+a {
+    color: #fff;
+}
+
+/* Container to hold both cards */
+.container {
+    padding: 5%;
+    display: flex;
+    gap: 20px; /* Gap between the two cards */
+    width: 100%;
+}
+
+/* Left Card (Name Card) */
+.name-card {
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    width: 30%; /* Takes 30% of the container */
+    max-height: 442px;
+}
+
+.icon{
+    padding: 10px;
+}
+
+.name-icon {
+    background-color: #000;
+    color: #FF0000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #FF0000;
+}
+
+.icon,
+.name,
+.email,
+.phone{
+    margin-bottom: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.name{
+    font-size: 18px;
+}
+.email, .phone {
+    font-size: 12px;
+}
+
+.edit-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all elements inside the card */
+    text-align: center;
+}
+
+.edit-btn a {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-self: center;
+    text-decoration: none;
+}
+
+.edit-btn a:hover {
+    background-color: #444;
+}
+
+/* Right Card (Ticket Card) */
+.ticket-card {
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%; /* Takes 60% of the container */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(253, 253, 253, 0.302);
+}
+
+.myticket {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info {
+    width: 100%;
+    background-color: #121212; /* Dark background similar to the image */
+    padding: 15px;
+    border-bottom-left-radius: 10px; /* Round bottom-left corner */
+    border-bottom-right-radius: 10px; /* Round bottom-right corner */
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item i {
+    color: #fff;
+}
+
+.menu-item:hover {
+    background-color: #1c1c1c;
+    cursor: pointer;
+}
+
+.menu-item form {
+    width: 100%;
+}
+
+.logout-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    color: inherit;
+    width: 100%;
+    font-size: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.logout-btn span {
+    margin-right: auto;
+}
+
+.ticket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.ticket {
+    background-color: white;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+span{
+    font-size: 16px;
+}
+.ticket-table {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ticket-table th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.ticket-table th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.theater-info {
+    width: 60%;
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.theater-info img{
+    width: 115px;
+    height: 170px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-info h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.movie-info p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.showtime-info {
+    width: 300px;
+    background-color: #edf0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.showtime-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+.showtime-info h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.showtime-info h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2a47d7;
+}
+
+.qr img{
+    width: 100%;
+    height: 100%;
+}
+
+/*delete*/
+.delete-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    color: inherit;
+    width: 100%;
+    font-size: inherit;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px; /* Ensure the font size matches */
+}
+
+.delete-btn span {
+    margin-right: auto;
+}
+
+/* Optional: Add hover effect to delete button similar to logout button */
+.delete-btn:hover {
+    background-color: #1c1c1c;
+    cursor: pointer;
+}
+

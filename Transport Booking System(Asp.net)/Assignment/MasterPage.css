@@ -1,0 +1,172 @@
+﻿body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    height: 55px;
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    border: 0px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.navbar a {
+    color: black;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: lightslategrey;
+}
+
+.logo-image {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 10px;
+    top: -5px;
+}
+
+.first-link {
+    padding-left: 200px
+}
+
+.logo {
+    height: 70%;
+    width: 70%;
+}
+
+.SignIn {
+    position: absolute;
+    right: 50px;
+    margin: -18px 5px;
+}
+
+.profile {
+    position: absolute;
+    right: 150px;
+    margin: -18px 5px;
+}
+
+
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 50px;
+}
+
+
+    .dropdown-content1 a{
+        font-size: 15px;
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+.dropdown-content1 a:hover{
+    background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.dropdown1 {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+}
+
+
+.footer {
+  background-color: grey;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10%;
+  padding-left:12%;
+  font-family: Arial, sans-serif;
+  margin-top: 150px;
+}
+
+.footer h4 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer p {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+  
+  .footer .row {
+    display: block;
+  }
+  
+  .footer-row {
+    width: 100%;
+  }
+}
+
+.row {
+  padding-left: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto auto auto auto auto/auto;
+}
+
+.footer-row-social-media ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20% 20% 20%;
+    
+}
+
+.footer-row-social-media i{
+    display: inline-block;
+    background: gray;
+    font-size: 30px;
+    padding: 5px;
+}

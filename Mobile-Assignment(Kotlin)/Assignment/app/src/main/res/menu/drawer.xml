@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/selected_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/messageFragment"
+        android:icon="@drawable/selected_message"
+        android:title="Meesage" />
+
+    <item
+        android:id="@+id/activityFragment"
+        android:icon="@drawable/ic_activity_selected"
+        android:title="Activity" />
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/selected_favorite"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/selected_account"
+        android:title="Account" />
+    <group android:id="@+id/accountSet">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit"
+            android:title="Logout" />
+    </group>
+</menu>

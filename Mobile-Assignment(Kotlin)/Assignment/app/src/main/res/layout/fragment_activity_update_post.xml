@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Title"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/ettTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/text_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Type title"
+                android:inputType="text"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Location" />
+
+            <Button
+                android:id="@+id/btnLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_location_map"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="4dp"
+                android:text="Set on map"
+                android:textColor="@android:color/darker_gray"
+                app:cornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLocation"
+                app:strokeColor="#000000"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/txtDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Details" />
+
+            <EditText
+                android:id="@+id/dttDetails"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/text_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Write some details"
+                android:inputType="textMultiLine"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="14sp"
+                android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:id="@+id/txtPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Add Photos" />
+
+            <Button
+                android:id="@+id/btnInPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_photo_24"
+                android:paddingTop="28dp"
+                android:paddingBottom="20dp"
+                android:text="Upload Your Photo"
+                android:textColor="@android:color/black"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/imageContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtRoomInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Room Information" />
+
+
+            <LinearLayout
+                android:id="@+id/linearInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/linear_room_format"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRoomSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Room Size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearInfo" />
+
+                <EditText
+                    android:id="@+id/ettRoomSize"
+                    android:layout_width="300dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_input"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="Type here"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="12dp"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtRoomSize" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="340dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ettRoomSize" />
+
+                <TextView
+                    android:id="@+id/txtRoomType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Room Type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chbSingleRoom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Single room" />
+
+                    <CheckBox
+                        android:id="@+id/chbMediumRoom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Medium room"
+                        app:cornerRadius="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chbSingleRoom"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chbMasterRoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Master room" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="340dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/txtNumBedRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Number of bedroom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chbBedOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chb_bed_room1" />
+
+                    <CheckBox
+                        android:id="@+id/chbBedTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chb_bed_room2" />
+
+                    <CheckBox
+                        android:id="@+id/chbBedThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chb_bed_room3" />
+
+                    <CheckBox
+                        android:id="@+id/chbBedFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chb_bed_room4" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="340dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/txtNumBath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Number of bath" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chbBathOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chb_bed_room1" />
+
+                    <CheckBox
+                        android:id="@+id/chbBathTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chb_bed_room2" />
+
+                    <CheckBox
+                        android:id="@+id/chbBathThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/chb_bed_room3" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Home Amenities"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+            <LinearLayout
+                android:id="@+id/linearHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/linear_room_format"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chbWifi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Wi-Fi" />
+
+                    <CheckBox
+                        android:id="@+id/chbTv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TV" />
+
+                </LinearLayout>
+
+                <!-- Third checkbox -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chbSingleRoom"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chbAir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Air-Conditioner" />
+
+                    <CheckBox
+                        android:id="@+id/chbWashM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Washing Machine" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Room Price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearHome" />
+
+            <EditText
+                android:id="@+id/ettPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="240dp"
+                android:background="@drawable/text_input"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="$0.0"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingBottom="4dp"
+                android:textSize="14sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp">
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    app:cornerRadius="12dp"
+                    android:layout_marginEnd="220dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Update"
+                    app:cornerRadius="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

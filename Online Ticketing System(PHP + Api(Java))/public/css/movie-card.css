@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.movie-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 230px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #880808;
+    border-radius: 5px;
+    position:relative;
+    display: inline-block;
+}
+
+.movieIMG{
+    margin: 2px;
+    width: 98%;
+}
+
+.classIMG{
+    width: 15%;
+}
+
+.movie-card h3{
+    font-size: 17px;
+    color: white;
+    padding: 20px;
+}
+
+.bookInfo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%; 
+    bottom: 20%; 
+}
+
+.bookBtn {
+    background-color: white;
+    color: red;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px 20px;
+    margin: 5px 10px 0 0;
+    display: none;
+    font-size: 10px;
+}
+
+.bookBtn:hover {
+    background-image: linear-gradient(to right, red , #880808);
+    color: white;
+}
+
+.movie-card:hover{
+    .bookBtn{
+        display: block;
+    }   
+
+    .movieIMG{
+        filter: opacity(0.75); 
+    }
+}

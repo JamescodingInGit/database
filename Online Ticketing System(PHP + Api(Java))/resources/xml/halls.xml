@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<halls>
+    <hall>
+        <hallID></hallID>
+        <cinemaID></cinemaID>
+        <seatNum></seatNum>
+        <seatMap></seatMap>
+        <created_at></created_at>
+        <upload_at></upload_at>
+    </hall>
+</halls>
+

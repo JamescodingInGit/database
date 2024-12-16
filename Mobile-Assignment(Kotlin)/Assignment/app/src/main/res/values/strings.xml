@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Register_caption">Lets Register to Use Our services</string>
+    <string name="Login_caption">Lets Login to Use Our services</string>
+    <string name="server_client_id">165609266944-o3a7mg4pjihsae5t7737ht2pvj90r89q.apps.googleusercontent.com</string>
+    <string name="RoomRental">A room rental will typically provide you access to your own private room with shared access to the rest of the property (house, townhouse, condo unit). Check the listing or contact the listing contact to confirm if the room rental includes a private or shared bathroom.</string>
+    <string name="RoomFurnished">Check your listing to see if the room or shared living spaces are furnished. For additional questions, ask the person listing the room what to expect in the shared living arrangement.</string>
+    <string name="Scam">See some helpful tips for spotting and avoiding scams and rental fraud when searching for a room for rent: How to Recognize and Avoid Rental Fraud and Tips to Help Avoid Scams While Searching for a Housemate.</string>
+    <string name="RoomFilter">Room helps you narrow your results to just Room listings. You can continue to use all other filters (e.g., number of bedrooms, number of bathrooms) that will continue to refer to the property level details (e.g., 3-bedroom house, 2-bathroom house). Together, you can look for Room listings within specific sized houses, townhouses or condos.</string>
+    <string name="Commitments">Being a part of a co-living community is more than rules about how we are going to keep the kitchen clean. Co-living is a communal experience that helps many people thrive through shared space and shared experiences. Whatever you do, or a fellow Member does, could potentially impact others.</string>
+    <string name="Cleans">The Members of the home are responsible for cleaning and purchasing cleaning supplies for daily cleaning needs. Talk to your housemates about a cleaning schedule and how best to share this responsibility and cost.</string>
+    <string name="Rules">Living with others should be focused on creating and maintaining high expectations. Not only of others, but ourselves. We find this is a common breakdown in community life so we remove this obstacle by establishing house rules.</string>
+    <string name="ExactRent">Follow Up: Are there other move-in fees? How and when do you pay rent?</string>
+    <string name="COVID">If a Member has a fever 38°C or higher), cough or trouble breathing they should seek medical care. Call ahead before you go to a doctor’s office or emergency room.</string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Malay</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="roomType">
+        <item>Single</item>
+        <item>Medium</item>
+        <item>Master</item>
+    </string-array>
+
+    <string name="title_activity_google_maps">GoogleMaps</string>
+    <string name="my_api_key" >AIzaSyCJUrYa8OvkfITbio1eLB4lA5K-Jy8Llhs</string>
+
+</resources>

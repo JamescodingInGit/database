@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<movies>
+    <movie>
+        <movieTitle></movieTitle>
+        <runningTime></runningTime>
+        <synopsis></synopsis>
+        <releaseDate></releaseDate>
+        <spokenLanguage></spokenLanguage>
+        <subtitles></subtitles>
+        <genre></genre>
+        <classfication></classfication>
+        <director></director>
+        <cast></cast>
+        <movieImage></movieImage>
+        <created_at></created_at>
+        <upload_at></upload_at>
+    </movie>
+    
+</movies>
+

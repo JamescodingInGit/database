@@ -1,0 +1,111 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.content {
+    padding-top: 100px; 
+}
+
+.top {
+    background-color: hsla(0, 100%, 1%, 0.75);
+}
+
+.stepper-wrapper {
+    display: flex;
+    justify-content: center; /* Center the stepper items horizontally */
+    align-items: center; /* Center the stepper items vertically */
+    flex: 1; /* Allow the stepper-wrapper to take available space */
+    margin: 0 20%;
+}
+
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+}
+
+.stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+}
+
+.stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+}
+
+.stepper-item.active {
+    font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+    background-color: red;
+}
+
+.stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid red;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+}
+
+.stepper-item:first-child::before {
+    content: none;
+}
+
+.stepper-item:last-child::after {
+    content: none;
+}
+
+/* Style for the close button */
+.close-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
